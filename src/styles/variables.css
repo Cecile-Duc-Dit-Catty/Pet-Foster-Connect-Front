@@ -1,0 +1,9 @@
+/*Variables de couleurs globales */
+:root {
+    --primary-color: #A4C2F4; /* Couleur principale */
+    --secondary-color: #313389; /* Couleur secondaire */
+    --background-color: #F7F7F7; /* Couleur de fond */
+    --text-color: #0A0A0A; /* Couleur du texte */
+    --button-color: #A8D5BA; /* Couleur des boutons */
+    --link-color: #313389; /* Couleur des liens */
+}

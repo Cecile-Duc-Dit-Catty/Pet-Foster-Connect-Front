@@ -1,0 +1,9 @@
+@import "./variables.css";
+@import "fonts.css";
+
+/* style globaux */
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+}
