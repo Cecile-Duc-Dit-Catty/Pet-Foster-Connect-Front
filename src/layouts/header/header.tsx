@@ -21,15 +21,23 @@ const Header = () => {
         <>
             <header className={styles.header}>
                 <div className={styles.logoContainer}>
-                    <img src={mobileLogo} alt="Logo" className={styles.logo} />
+                    <Link to="/">
+                        <img
+                            src={mobileLogo}
+                            alt="Logo"
+                            className={styles.logo}
+                        />
+                    </Link>
                 </div>
                 <div className={styles.userBurgerContainer}>
                     <div className={styles.userIconContainer}>
-                        <img
-                            src={userIcon}
-                            alt="Mon compte"
-                            className={styles.userIcon}
-                        />
+                        <Link to="/mon-espace">
+                            <img
+                                src={userIcon}
+                                alt="Mon espace"
+                                className={styles.userIcon}
+                            />
+                        </Link>
                     </div>
 
                     {/*style menu burger */}
@@ -54,7 +62,7 @@ const Header = () => {
                         <Link to="/" onClick={closeMenu}>
                             <img
                                 src={houseIcon}
-                                alt="Logo"
+                                alt="Accueil"
                                 className={styles.icone}
                             />
                             Home
@@ -64,7 +72,7 @@ const Header = () => {
                         <Link to="/animaux" onClick={closeMenu}>
                             <img
                                 src={pawIcon}
-                                alt="Logo"
+                                alt="Liste animaux"
                                 className={styles.icone}
                             />
                             Animaux
@@ -74,7 +82,7 @@ const Header = () => {
                         <Link to="/associations" onClick={closeMenu}>
                             <img
                                 src={aIcon}
-                                alt="Logo"
+                                alt="Associations"
                                 className={styles.icone}
                             />
                             Associations
@@ -84,7 +92,7 @@ const Header = () => {
                         <Link to="/mon-espace" onClick={closeMenu}>
                             <img
                                 src={addressIcon}
-                                alt="Logo"
+                                alt="Mon espace"
                                 className={styles.icone}
                             />
                             Mon espace

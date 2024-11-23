@@ -56,7 +56,7 @@
     background-color: var(--secondary-color);
     border-radius: 0 0 1rem 1rem;
     margin-inline: 0.5rem;
-    transform: translate(110%); /* Cache le menu à droite par défaut */
+    transform: translate(-110%); /* Cache le menu à gauche par défaut */
 }
 
 .menu a {
