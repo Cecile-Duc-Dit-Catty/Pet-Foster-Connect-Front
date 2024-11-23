@@ -2,6 +2,7 @@
 :root {
     --primary-color: #A4C2F4; /* Couleur principale */
     --secondary-color: #313389; /* Couleur secondaire */
+    --navDesktop-color: 49, 51, 137; /* Couleur line top navbar */
     --background-color: #F7F7F7; /* Couleur de fond */
     --text-color: #0A0A0A; /* Couleur du texte */
     --button-color: #A8D5BA; /* Couleur des boutons */
