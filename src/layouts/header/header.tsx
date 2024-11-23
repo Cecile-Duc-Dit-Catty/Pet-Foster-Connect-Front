@@ -14,7 +14,8 @@ import addressIcon from '../../assets/icons/address-card-solid-primary-color.svg
 import useMenuToggle from '../../hooks/useMenuToggle.tsx';
 
 const Header = () => {
-    const { menuOpen, toggleMenu, closeMenu } = useMenuToggle();
+    const { menuOpen, toggleMenu, closeMenu, buttonRef, menuRef } =
+        useMenuToggle();
 
     return (
         <>
@@ -33,6 +34,7 @@ const Header = () => {
 
                     {/*style menu burger */}
                     <button
+                        ref={buttonRef}
                         className={styles.burgerMenuButton}
                         onClick={toggleMenu}
                     >
@@ -44,6 +46,7 @@ const Header = () => {
             </header>
             {/*Menu burger */}
             <nav
+                ref={menuRef} // Attacher menuRef au conteneur du menu
                 className={`${styles.menu} ${menuOpen ? styles.menuOpen : ''}`}
             >
                 <ul>

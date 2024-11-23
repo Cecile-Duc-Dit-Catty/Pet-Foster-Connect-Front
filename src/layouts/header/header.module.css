@@ -56,6 +56,7 @@
     background-color: var(--secondary-color);
     border-radius: 0 0 1rem 1rem;
     margin-inline: 0.5rem;
+    transform: translate(110%); /* Cache le menu à droite par défaut */
 }
 
 .menu a {
@@ -80,6 +81,10 @@
 
 .icone {
     width: 1.6rem;
+}
+
+.menuOpen {
+    transform: translate(0);
 }
 
 
