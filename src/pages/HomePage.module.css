@@ -20,3 +20,30 @@
     height: 6rem;
     padding: 1.5rem;
 }
+.titleContainer h2{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-inline: 0.3rem;
+    font-weight: 500;
+}
+
+.titleContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator {
+    margin-top: 0.5rem;
+    width: 12rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+    background: var(--primary-color);
+}
+.carouselSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

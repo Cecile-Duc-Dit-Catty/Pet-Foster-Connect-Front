@@ -1,0 +1,48 @@
+.card {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 15rem;
+    height: 30.6rem;
+    border-radius: 0.5rem;
+}
+
+.photoProfileContainer {
+    margin-block: 0.6rem;
+
+}
+
+.card img {
+    width: 14rem;
+    height: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.informationsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 93%;
+    height: 13.5rem;
+    border-radius: 0.5rem;
+}
+
+.animalName {
+    text-align: center;
+    font-family: var(--font-animalName) ;
+    font-size: 1.3rem;
+}
+
+.animalInformations {
+    margin-top: 1rem;
+    padding-right: 4.8rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.animalInformations p {
+    color: black; }
