@@ -1,5 +1,5 @@
 import styles from './HomePage.module.css';
-import AnimalCard from '../components/animalCard/animalCard.tsx';
+import Carousel from '../components/carouselAnimalCard/carouselAnimalCard.tsx';
 
 const HomePage = () => {
     return (
@@ -15,7 +15,7 @@ const HomePage = () => {
                         <h2>Nouveaux amis en quête d'un foyer</h2>
                         <div className={styles.separator}></div>
                     </div>
-                    <AnimalCard />
+                    <Carousel />
                 </section>
             </main>
         </>
