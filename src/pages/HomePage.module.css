@@ -1,10 +1,18 @@
+/*--------------------------*/
+/* MOBILE FIRST */
+/*--------------------------*/
+
 .headerSection {
-    background-image: url("../assets/images/background/dog-and-cat-together.png");
+    background-image: url("../assets/images/background/dog-and-cat-together-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 40% 80%;
     width: 100%;
     height: 16rem;
+}
+
+.headerDescriptionTablet {
+    display: none;
 }
 
 .headerDescription p {
@@ -48,7 +56,15 @@
     align-items: center;
 }
 
+.carouselTabletVersion {
+    display: none;
+}
+
 /*Section CTA */
+
+.ctaSectionTablet {
+    display: none;
+}
 
 .ctaSection {
     display: flex;
@@ -81,4 +97,142 @@
 .ctaInformation {
     padding-left: 2.9rem;
     padding-right: 2rem;
+}
+
+/*--------------------------*/
+/* TABLET VERSION */
+/*--------------------------*/
+
+@media (min-width: 750px) {
+    .headerSection {
+        background-image: url("../assets/images/background/dog-and-cat-together.png");
+        background-size: cover;
+        background-position: 50% 70%; /* Centrer horizontalement et verticalement */
+        height: 25rem; /* Hauteur fixe du conteneur */
+        width: 100%; /* Largeur fixe */
+    }
+
+    .headerDescription {
+        display: none;
+    }
+
+    .headerDescriptionTablet {
+        display: flex;
+    }
+
+    .headerDescriptionTablet p {
+        color: white;
+        position: relative;
+        font-weight: 200;
+        background-color: rgba(10, 10, 10, 0.5);
+        font-size: 1.6rem;
+        width: 29rem;
+        height: 7rem;
+        padding-top: 1rem;
+        text-align: center;
+        left: 40%;
+        top: 15rem;
+
+
+}
+    .titleContainer h2 {
+        font-size: 2.5rem;
+    }
+
+    .separator {
+        width: 20rem;
+    }
+
+    .carouselMobileVersion {
+        display: none;
+
+    }
+
+    .carouselTabletVersion {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem
+    }
+
+    /*cta section */
+
+    /*.ctaSection {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.ctaSectionTablet {*/
+    /*    display: inline-block;*/
+    /*    background-color: #EDEDED;*/
+    /*    margin-top: 5rem;*/
+    /*    margin-bottom: 7rem;*/
+    /*}*/
+
+    /*.ctaContainer {*/
+    /*    color: black;*/
+
+    /*}*/
+
+    /*.ctaContainer img {*/
+    /*      width: 100rem;*/
+    /*      padding-top: 1.1rem;*/
+    /*      padding-left: 10rem;*/
+
+    /*  }*/
+
+    /*.ctaContainer h3 {*/
+    /*   padding-left: 5.4rem;*/
+    /*    font-size: 1.7rem;*/
+    /*    margin-block: 1rem;*/
+    /*    padding-top: 0.8rem;*/
+    /*}*/
+
+    /*.rightSection {*/
+    /*    padding-right: 30rem;*/
+
+    /*}*/
+
+    /*.ctaContainer p {*/
+    /*    color: black;*/
+    /*    font-size: 1.2rem;*/
+    /*    margin-bottom: 2rem;*/
+    /*    padding-inline: 2.5rem;*/
+    /*    padding-right: 8rem;*/
+    /*    font-weight: 300;*/
+    /*    letter-spacing: -0.2px;*/
+    /*}*/
+
+
+
+}
+/*--------------------------*/
+/* DESKTOP VERSION */
+/*--------------------------*/
+@media (min-width: 1000px) {
+
+    .headerDescriptionTablet p {
+        left: 55%;
+        top: 10rem;
+    }
+
+    .carouselTabletVersion {
+        gap: 8rem
+    }
+
+    .ctaContainer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*--------------------------*/
+    /* DESKTOP HD VERSION */
+    /*--------------------------*/
+
+    @media screen and (min-width: 1200px) {
+        .headerDescriptionTablet p {
+            top: 10rem;
+            left: 76%;
+        }
+    }
+
+
 }
