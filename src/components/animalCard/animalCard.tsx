@@ -1,5 +1,5 @@
 import styles from './animalCard.module.css';
-import Button from '../mainButton/mainButton.tsx';
+import Button from '../mainButton/ctaButton.tsx';
 import PhotoProfilExample from '../../assets/images/catExample.png';
 
 const AnimalCard = () => {
@@ -18,7 +18,7 @@ const AnimalCard = () => {
                         <p>Âge : 4 ans</p>
                     </div>
                     <div className={styles.buttonCard}>
-                        <Button />
+                        <Button label="En savoir plus" />
                     </div>
                 </div>
             </div>
