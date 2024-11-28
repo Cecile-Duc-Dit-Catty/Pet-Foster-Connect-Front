@@ -27,34 +27,47 @@ const HomePage = () => {
                     <div className={styles.carouselMobileVersion}>
                         <Carousel />
                     </div>
-                    <div className={styles.carouselTabletVersion}>
+                    <div className={styles.carouselDesktopVersion}>
                         <AnimalCard />
                         <AnimalCard />
                         <AnimalCard />
                     </div>
                 </section>
                 <section className={styles.ctaSection}>
-                    <img
-                        src={DogImg}
-                        alt="Chien dans les bras de sa famille d'accueil"
-                    />
-                    <h3>Faisons la différence ensemble !</h3>
-                    <div className={styles.ctaInformation}>
-                        <p>
-                            Pet Foster Connect aide les associations à trouver
-                            des familles d’accueil sûres et aimante pour les
-                            animaux en attente d’un foyer définitif
-                        </p>
-                        <p>
-                            Inscrivez vous en tant que famille d’accueil et
-                            faites profiter à une animal la chaleur de votre
-                            foyer en attendant qu’il trouve sa famille d’accueil
-                        </p>
+                    <div className={styles.ctaSectionContainer}>
+                        <div className={styles.leftSide}>
+                            <img
+                                src={DogImg}
+                                alt="Chien dans les bras de sa famille d'accueil"
+                            />
+                        </div>
+                        <div className={styles.rightSide}>
+                            <div className={styles.informationContainer}>
+                                <h3>Faisons la différence ensemble !</h3>
+                                <div className={styles.ctaInformation}>
+                                    <p>
+                                        Pet Foster Connect aide les associations
+                                        à trouver des familles d’accueil sûres
+                                        et aimante pour les animaux en attente
+                                        d’un foyer définitif
+                                    </p>
+                                    <p>
+                                        Inscrivez vous en tant que famille
+                                        d’accueil et faites profiter à une
+                                        animal la chaleur de votre foyer en
+                                        attendant qu’il trouve sa famille
+                                        d’accueil
+                                    </p>
+                                </div>
+                            </div>
+                            <div className={styles.buttonSection}>
+                                <CtaButton label="S'inscrire" />
+                            </div>
+                        </div>
                     </div>
-                    <CtaButton label="S'inscrire" />
                 </section>
 
-                <section className={styles.ctaSectionTablet}>
+                <section className={styles.ctaSectionDesktop}>
                     <div className={styles.ctaContainer}>
                         <div className={styles.leftSection}>
                             <img

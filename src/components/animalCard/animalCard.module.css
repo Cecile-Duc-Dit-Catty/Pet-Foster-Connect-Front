@@ -1,3 +1,7 @@
+/*--------------------------*/
+/* MOBILE FIRST */
+/*--------------------------*/
+
 .card {
     margin-top: 3rem;
     display: flex;
@@ -7,6 +11,10 @@
     width: 15rem;
     height: 30.6rem;
     border-radius: 0.5rem;
+}
+
+.card:hover {
+    opacity: 0.9;
 }
 
 .photoProfileContainer {
@@ -46,3 +54,43 @@
 
 .animalInformations p {
     color: black; }
+
+/*--------------------------*/
+/* DESKTOP VERSION */
+/*--------------------------*/
+
+@media (min-width: 1000px) {
+    .card {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--primary-color);
+        width: 13rem;
+        height: 28.6rem;
+        border-radius: 0.5rem;
+    }
+
+    .card img {
+        width: 12rem;
+        height: 100%;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .informationsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 93%;
+        height: 13.7rem;
+        border-radius: 0.5rem;
+    }
+
+    .animalInformations {
+        padding-right: 3rem;
+    }
+
+
+
+}

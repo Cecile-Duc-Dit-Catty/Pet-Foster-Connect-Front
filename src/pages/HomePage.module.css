@@ -56,17 +56,17 @@
     align-items: center;
 }
 
-.carouselTabletVersion {
+.carouselDesktopVersion {
     display: none;
 }
 
 /*Section CTA */
 
-.ctaSectionTablet {
+.ctaSectionDesktop {
     display: none;
 }
 
-.ctaSection {
+.ctaSectionContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,11 +78,12 @@
 
 .ctaSection img {
     margin-top: 0.5rem;
-    width: 90%;
+    width: 49rem;
     border-radius: 0.5rem;
 }
 
 .ctaSection h3 {
+    text-align: center;
     margin-block: 1rem;
     font-size: 1.4rem;
 }
@@ -95,15 +96,20 @@
 }
 
 .ctaInformation {
-    padding-left: 2.9rem;
+    padding-left: 2rem;
     padding-right: 2rem;
 }
+.buttonSection {
+    text-align: center;
+}
+
 
 /*--------------------------*/
 /* TABLET VERSION */
 /*--------------------------*/
 
 @media (min-width: 750px) {
+
     .headerSection {
         background-image: url("../assets/images/background/dog-and-cat-together.png");
         background-size: cover;
@@ -143,71 +149,28 @@
         width: 20rem;
     }
 
-    .carouselMobileVersion {
-        display: none;
-
+    .ctaSection {
+        margin-bottom: 5rem;
     }
 
-    .carouselTabletVersion {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem
+    .leftSide img {
+width: 30rem;
     }
 
-    /*cta section */
+    .informationContainer h3 {
+        font-size: 1.8rem;
+    }
 
-    /*.ctaSection {*/
-    /*    display: none;*/
-    /*}*/
-
-    /*.ctaSectionTablet {*/
-    /*    display: inline-block;*/
-    /*    background-color: #EDEDED;*/
-    /*    margin-top: 5rem;*/
-    /*    margin-bottom: 7rem;*/
-    /*}*/
-
-    /*.ctaContainer {*/
-    /*    color: black;*/
-
-    /*}*/
-
-    /*.ctaContainer img {*/
-    /*      width: 100rem;*/
-    /*      padding-top: 1.1rem;*/
-    /*      padding-left: 10rem;*/
-
-    /*  }*/
-
-    /*.ctaContainer h3 {*/
-    /*   padding-left: 5.4rem;*/
-    /*    font-size: 1.7rem;*/
-    /*    margin-block: 1rem;*/
-    /*    padding-top: 0.8rem;*/
-    /*}*/
-
-    /*.rightSection {*/
-    /*    padding-right: 30rem;*/
-
-    /*}*/
-
-    /*.ctaContainer p {*/
-    /*    color: black;*/
-    /*    font-size: 1.2rem;*/
-    /*    margin-bottom: 2rem;*/
-    /*    padding-inline: 2.5rem;*/
-    /*    padding-right: 8rem;*/
-    /*    font-weight: 300;*/
-    /*    letter-spacing: -0.2px;*/
-    /*}*/
-
-
+    .ctaInformation {
+        padding-inline: 10rem;
+    }
 
 }
 /*--------------------------*/
 /* DESKTOP VERSION */
 /*--------------------------*/
 @media (min-width: 1000px) {
+
 
     .headerDescriptionTablet p {
         left: 55%;
@@ -218,21 +181,85 @@
         gap: 8rem
     }
 
-    .ctaContainer {
+    .carouselDesktopVersion {
+        display: flex;
+        flex-direction: row;
+        gap: 6rem
+
+    }
+
+    .carouselMobileVersion {
+        display: none;
+
+    }
+
+    .ctaSectionContainer {
         display: flex;
         flex-direction: row;
     }
+
+    .leftSide img {
+        width: 60rem;
+        margin-left: 1.5rem;
+    }
+
+    .informationContainer {
+        margin-left: 3rem;
+    }
+
+    .informationContainer h3 {
+        padding-left: 3rem;
+    }
+
+    .informationContainer p {
+        padding-right: 7rem;
+
+    }
+
+    .buttonSection {
+        margin-left: 12rem;
+        margin-bottom: 2.5rem;
+    }
+
+
 
     /*--------------------------*/
     /* DESKTOP HD VERSION */
     /*--------------------------*/
 
     @media screen and (min-width: 1200px) {
+
         .headerDescriptionTablet p {
             top: 10rem;
             left: 76%;
         }
+
+        /*cta section */
+
+
+        .informationContainer h3 {
+            margin-top: 1.2rem;
+            font-size: 1.9rem;
+        }
+
+        .ctaSectionContainer {
+            margin-top: 1rem;
+        }
+
+        .ctaInformation  {
+            width: 40rem;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            padding-right: 7rem;
+        }
+
+        .ctaInformation p {
+            margin-bottom: 2rem;
+        }
+
+        .leftSide img {
+            width: 35rem;
+            margin-bottom: 2.5rem;
+        }
     }
-
-
 }
