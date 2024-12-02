@@ -1,8 +1,13 @@
+import styles from "../AnimalsPage/AnimalsPage.module.css";
+import PawsHeader from "../../components/pawsHeader/pawsHeader.tsx";
+
 const AnimalsPage = () => {
     return (
         <>
-            <h1>Hello World</h1>
-            </>
+            <main>
+          < PawsHeader />
+            </main>
+        </>
     )
 }
 
