@@ -3,7 +3,7 @@
 /*--------------------------*/
 
 .headerSection {
-    background-image: url("../assets/images/background/dog-and-cat-together-mobile.png");
+    background-image: url("../../assets/images/background/dog-and-cat-together-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 40% 80%;
@@ -111,7 +111,7 @@
 @media (min-width: 750px) {
 
     .headerSection {
-        background-image: url("../assets/images/background/dog-and-cat-together.png");
+        background-image: url("../../assets/images/background/dog-and-cat-together.png");
         background-size: cover;
         background-position: 50% 70%; /* Centrer horizontalement et verticalement */
         height: 25rem; /* Hauteur fixe du conteneur */

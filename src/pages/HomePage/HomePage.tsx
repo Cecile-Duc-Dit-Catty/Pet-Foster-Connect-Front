@@ -1,8 +1,8 @@
 import styles from './HomePage.module.css';
-import Carousel from '../components/carouselAnimalCard/carouselAnimalCard.tsx';
-import DogImg from '../assets/images/dog-with-foster.png';
-import CtaButton from '../components/mainButton/ctaButton.tsx';
-import AnimalCard from '../components/animalCard/animalCard.tsx';
+import Carousel from '../../components/carouselAnimalCard/carouselAnimalCard.tsx';
+import DogImg from '../../assets/images/dog-with-foster.png';
+import CtaButton from '../../components/mainButton/ctaButton.tsx';
+import AnimalCard from '../../components/animalCard/animalCard.tsx';
 
 const HomePage = () => {
     return (
