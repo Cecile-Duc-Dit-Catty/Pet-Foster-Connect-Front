@@ -5,9 +5,8 @@
 
 body {
     font-family: var(--font-primary);
-    color: var(--text-color);
 }
 
 main {
-    height: 100vh;
+    height: auto;
 }

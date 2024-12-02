@@ -1,0 +1,286 @@
+/*--------------------------*/
+/* MOBILE FIRST */
+/*--------------------------*/
+
+.headerSection {
+    background-image: url("../assets/images/background/dog-and-cat-together-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 80%;
+    width: 100%;
+    height: 16rem;
+}
+
+.headerDescriptionTablet {
+    display: none;
+}
+
+.headerDescription p {
+    position: relative;
+    top: 7rem;
+    left: 1rem;
+    font-weight: 200;
+    background-color: rgba(10, 10, 10, 0.5);
+
+    color: white;
+    text-align: center;
+    width: 16rem;
+    height: 6rem;
+    padding: 1.5rem;
+}
+.titleContainer h2{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-inline: 0.3rem;
+    font-weight: 500;
+}
+
+.titleContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator {
+    margin-top: 0.5rem;
+    width: 12rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
+    background: var(--primary-color);
+}
+.carouselSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carouselDesktopVersion {
+    display: none;
+}
+
+/*Section CTA */
+
+.ctaSectionDesktop {
+    display: none;
+}
+
+.ctaSectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    background-color: #EDEDED;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.ctaSection img {
+    margin-top: 0.5rem;
+    width: 49rem;
+    border-radius: 0.5rem;
+}
+
+.ctaSection h3 {
+    text-align: center;
+    margin-block: 1rem;
+    font-size: 1.4rem;
+}
+
+.ctaSection p {
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+}
+
+.ctaInformation {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.buttonSection {
+    text-align: center;
+}
+
+
+/*--------------------------*/
+/* TABLET VERSION */
+/*--------------------------*/
+
+@media (min-width: 750px) {
+
+    .headerSection {
+        background-image: url("../assets/images/background/dog-and-cat-together.png");
+        background-size: cover;
+        background-position: 50% 70%; /* Centrer horizontalement et verticalement */
+        height: 25rem; /* Hauteur fixe du conteneur */
+        width: 100%; /* Largeur fixe */
+    }
+
+    .headerDescription {
+        display: none;
+    }
+
+    .headerDescriptionTablet {
+        display: flex;
+    }
+
+    .headerDescriptionTablet p {
+        color: white;
+        position: relative;
+        font-weight: 200;
+        background-color: rgba(10, 10, 10, 0.5);
+        font-size: 1.6rem;
+        width: 29rem;
+        height: 7rem;
+        padding-top: 1rem;
+        text-align: center;
+        left: 40%;
+        top: 15rem;
+
+
+}
+    .titleContainer h2 {
+        font-size: 2.5rem;
+    }
+
+    .separator {
+        width: 20rem;
+    }
+
+    .ctaSection {
+        margin-bottom: 5rem;
+    }
+
+    .leftSide img {
+width: 30rem;
+    }
+
+    .informationContainer h3 {
+        font-size: 1.8rem;
+    }
+
+    .ctaInformation {
+        padding-inline: 10rem;
+    }
+
+}
+/*--------------------------*/
+/* PORTABLE DESKTOP STANDARD VERSION */
+/*--------------------------*/
+@media (min-width: 1000px) {
+
+
+    .headerDescriptionTablet p {
+        left: 53%;
+        top: 10rem;
+    }
+
+    .carouselTabletVersion {
+        gap: 8rem
+    }
+
+    .carouselDesktopVersion {
+        display: flex;
+        flex-direction: row;
+        gap: 6rem
+
+    }
+
+    .carouselMobileVersion {
+        display: none;
+
+    }
+    .carouselSection{
+        margin-bottom: 5rem;
+    }
+
+    .ctaSectionContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .leftSide img {
+        width: 60rem;
+        margin-left: 1.5rem;
+    }
+
+    .informationContainer {
+        margin-left: 3rem;
+    }
+
+
+    .informationContainer p {
+        margin-left: 6rem;
+    }
+
+    .buttonSection {
+
+        margin-bottom: 2.5rem;
+    }
+
+    .ctaInformation {
+        padding-inline: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+
+    /*--------------------------*/
+    /* PORTABLE DESKTOP HD VERSION */
+    /*--------------------------*/
+
+    @media screen and (min-width: 1200px) {
+
+        .headerDescriptionTablet p {
+            top: 10rem;
+            left: 66%;
+        }
+        /*  cta section */
+
+        .informationContainer h3 {
+            margin-top: 1.2rem;
+            font-size: 1.9rem;
+        }
+
+        .ctaSectionContainer {
+            margin-top: 1rem;
+        }
+
+        .ctaInformation  {
+            width: 40rem;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            padding-right: 7rem;
+        }
+
+        .ctaInformation p {
+            margin-bottom: 2rem;
+        }
+
+        .leftSide img {
+            width: 35rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+
+/*--------------------------*/
+/* DESKTOP STANDARD VERSION */
+/*--------------------------*/
+
+@media screen and (min-width: 1920px) {
+    .headerDescriptionTablet p {
+        left: 75.5%;
+    }
+
+    .ctaInformation {
+        width: 45rem;
+    }
+
+    .informationContainer p {
+        margin-left: 9rem;
+    }
+
+}
