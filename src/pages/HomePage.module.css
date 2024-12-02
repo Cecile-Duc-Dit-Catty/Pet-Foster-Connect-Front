@@ -167,13 +167,13 @@ width: 30rem;
 
 }
 /*--------------------------*/
-/* DESKTOP VERSION */
+/* PORTABLE DESKTOP STANDARD VERSION */
 /*--------------------------*/
 @media (min-width: 1000px) {
 
 
     .headerDescriptionTablet p {
-        left: 55%;
+        left: 53%;
         top: 10rem;
     }
 
@@ -192,10 +192,14 @@ width: 30rem;
         display: none;
 
     }
+    .carouselSection{
+        margin-bottom: 5rem;
+    }
 
     .ctaSectionContainer {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     .leftSide img {
@@ -207,35 +211,34 @@ width: 30rem;
         margin-left: 3rem;
     }
 
-    .informationContainer h3 {
-        padding-left: 3rem;
-    }
 
     .informationContainer p {
-        padding-right: 7rem;
-
+        margin-left: 6rem;
     }
 
     .buttonSection {
-        margin-left: 12rem;
+
         margin-bottom: 2.5rem;
     }
 
+    .ctaInformation {
+        padding-inline: 0rem;
+        padding-right: 0rem;
+    }
+}
 
 
     /*--------------------------*/
-    /* DESKTOP HD VERSION */
+    /* PORTABLE DESKTOP HD VERSION */
     /*--------------------------*/
 
     @media screen and (min-width: 1200px) {
 
         .headerDescriptionTablet p {
             top: 10rem;
-            left: 76%;
+            left: 66%;
         }
-
-        /*cta section */
-
+        /*  cta section */
 
         .informationContainer h3 {
             margin-top: 1.2rem;
@@ -262,4 +265,22 @@ width: 30rem;
             margin-bottom: 2.5rem;
         }
     }
+
+/*--------------------------*/
+/* DESKTOP STANDARD VERSION */
+/*--------------------------*/
+
+@media screen and (min-width: 1920px) {
+    .headerDescriptionTablet p {
+        left: 75.5%;
+    }
+
+    .ctaInformation {
+        width: 45rem;
+    }
+
+    .informationContainer p {
+        margin-left: 9rem;
+    }
+
 }
