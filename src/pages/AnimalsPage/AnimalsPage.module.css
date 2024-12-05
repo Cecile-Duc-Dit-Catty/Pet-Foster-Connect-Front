@@ -1,4 +1,9 @@
-/*MOBILE FIRST */
+/*--------------------------*/
+/* MOBILE FIRST */
+/*--------------------------*/
+.asideContainer {
+    display: none;
+}
 
 .formDesktop {
     display: none;
@@ -49,3 +54,95 @@
     position: relative;
     bottom: 4.5rem;
 }
+
+/*--------------------------*/
+/* TABLET VERSION */
+/*--------------------------*/
+
+@media (min-width: 720px) {
+
+    .formMobile {
+        display: none;
+    }
+
+    .formDesktop {
+        display: flex;
+        justify-content: center;
+    }
+
+    .formContainerDesktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 4rem;
+        background-color: #EDEDED;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        padding: 2rem;
+        margin-top: 1rem;
+        width: 49rem;
+    }
+
+    .alignFormDesktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .formContainerDesktop select {
+        align-items: center;
+        width: 13rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: 0.4rem;
+        margin-bottom: 1rem;
+        margin-right: 1.5rem;
+    }
+
+    .buttonsContainerDesktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+
+    }
+
+    .reinitDesktop {
+        transform: scaleX(-1); /* Miroir horizontal */
+    }
+
+    .animalsCardContainer {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5rem;
+        position: relative;
+        bottom: 4.5rem;
+        gap: 2rem;
+    }
+
+}
+
+/*--------------------------*/
+/* PORTABLE DESKTOP STANDARD VERSION */
+/*--------------------------*/
+@media (min-width: 1000px) {
+
+}
+
+/*--------------------------*/
+/* PORTABLE DESKTOP HD VERSION */
+/*--------------------------*/
+
+@media screen and (min-width: 1200px) { }
+
+/*--------------------------*/
+/* DESKTOP STANDARD VERSION */
+/*--------------------------*/
+
+@media screen and (min-width: 1920px) { }

@@ -10,9 +10,9 @@ const AnimalsPage = () => {
             <main>
                 <PawsHeader />
                 <section className={styles.formDesktop}>
-                    <div className={styles.formContainer}>
+                    <div className={styles.formContainerDesktop}>
                         <form action="">
-                            <div className={styles.alignForm}>
+                            <div className={styles.alignFormDesktop}>
                                 <div>
                                     <select name="species" id="species">
                                         <option value="none">Espèce</option>
@@ -41,8 +41,12 @@ const AnimalsPage = () => {
                                         </option>
                                     </select>
                                 </div>
-                                <CtaButton label={'Rechercher'} />
-                                <button></button>
+                                <div className={styles.buttonsContainerDesktop}>
+                                    <CtaButton label={'Rechercher'} />
+                                    <button className={styles.reinit}>
+                                        <img src={Reinit} alt="Réinitialiser" />
+                                    </button>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -91,6 +95,48 @@ const AnimalsPage = () => {
                     </div>
                 </section>
                 <section className={styles.animalsCardContainer}>
+                    <aside className={styles.asideContainer}>
+                        <h2>POUR UN ACCUEIL TEMPORAIRE ENGAGÉ</h2>
+                        <p>
+                            Accueillir un animal temporairement, c’est lui
+                            offrir un refuge chaleureux et une chance de trouver
+                            un foyer définiti
+                        </p>
+                        <p>
+                            Ce geste solidaire est essentiel pour aider les
+                            associations à prendre soin des animaux en attente
+                            d’adoption.
+                        </p>
+                        <p>
+                            Avant de devenir famille d’accueil, posez-vous les
+                            bonnes questions:
+                        </p>
+                        <li>
+                            <ul>
+                                Ai-je le temps et l’espace nécessaires pour
+                                m’occuper d’un animal ?{' '}
+                            </ul>
+                            <ul>
+                                Suis-je prêt à m’investir émotionnellement pour
+                                un accueil temporaire ?
+                            </ul>
+                        </li>
+                        <p>
+                            Les associations partenaires vous accompagnent à
+                            chaque étape, vous apportant des conseils et un
+                            suivi adapté. Elles vous guideront pour trouver
+                            l’animal qui correspond à votre mode de vie et vos
+                            capacités.
+                        </p>
+                        <p>
+                            En devenant famille d’accueil, vous devenez un
+                            maillon clé dans leur parcours vers une nouvelle
+                            vie. Ensemble, changeons leur destin.
+                        </p>
+                    </aside>
+                    <AnimalCard />
+                    <AnimalCard />
+                    <AnimalCard />
                     <AnimalCard />
                     <AnimalCard />
                     <AnimalCard />
