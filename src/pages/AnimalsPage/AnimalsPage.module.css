@@ -1,6 +1,13 @@
 /*--------------------------*/
 /* MOBILE FIRST */
 /*--------------------------*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
 .asideContainer {
     display: none;
 }
@@ -132,6 +139,85 @@
 /* PORTABLE DESKTOP STANDARD VERSION */
 /*--------------------------*/
 @media (min-width: 1000px) {
+
+    .formContainerDesktop {
+        z-index: 1;
+        background-color: #EDEDED;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        padding: 2rem;
+        margin-top: 1rem;
+        width: 75rem;
+        height: 15rem;
+        bottom: 7rem;
+    }
+
+    .formContainerDesktop select {
+        width: 18rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: 0.4rem;
+        margin-bottom: 2rem;
+        margin-right: 1.5rem;
+        margin-left: 3.5rem;
+    }
+
+
+    .asideContainer {
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #EDEDED;
+        padding: 5rem;
+        position: absolute;
+        left: 1.7rem;
+        top: 24rem;
+        padding-top: 13rem;
+    }
+
+    .asideContainer p {
+        color: #0A0A0A;
+    }
+
+    .asideContainer ul {
+        padding-bottom: 1rem;
+    }
+
+    .titleContainer {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .lineHeader {
+        width: 20rem;
+        height: 0.3rem;
+        background-color: var(--primary-color);
+        border-radius: 0.4rem;
+    }
+
+    .textContainer {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .textContainer p {
+        padding-bottom: 1rem;
+    }
+
+    .animalsCardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        width: 50rem;
+        left: 4.5rem;
+
+    }
+
+    .buttonsContainerDesktop {
+        width: -25rem;
+        margin-bottom: 2rem;
+
+
+    }
 
 }
 

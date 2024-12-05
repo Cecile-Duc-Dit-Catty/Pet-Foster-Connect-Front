@@ -18,3 +18,23 @@
     padding-block: 2rem;
 
 }
+
+.headerDescription {
+     position: relative;
+ }
+
+/*--------------------------*/
+/* PORTABLE DESKTOP STANDARD VERSION */
+/*--------------------------*/
+@media (min-width: 1000px) {
+
+    .headerDescription {
+        bottom: 18rem;
+        margin-inline: 40rem;
+    }
+
+    .headerDescription p {
+        font-size: 2.8rem;
+    }
+
+}

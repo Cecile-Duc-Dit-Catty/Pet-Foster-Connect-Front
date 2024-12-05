@@ -94,9 +94,22 @@ const AnimalsPage = () => {
                         </form>
                     </div>
                 </section>
-                <section className={styles.animalsCardContainer}>
-                    <aside className={styles.asideContainer}>
+                <div className={styles.alignDesktop}>
+                    <section className={styles.animalsCardContainer}>
+                        <AnimalCard />
+                        <AnimalCard />
+                        <AnimalCard />
+                        <AnimalCard />
+                        <AnimalCard />
+                        <AnimalCard />
+                    </section>
+                </div>
+                <div className={styles.asideContainer}>
+                    <div className={styles.titleContainer}>
                         <h2>POUR UN ACCUEIL TEMPORAIRE ENGAGÉ</h2>
+                        <div className={styles.lineHeader}></div>
+                    </div>
+                    <div className={styles.textContainer}>
                         <p>
                             Accueillir un animal temporairement, c’est lui
                             offrir un refuge chaleureux et une chance de trouver
@@ -111,16 +124,16 @@ const AnimalsPage = () => {
                             Avant de devenir famille d’accueil, posez-vous les
                             bonnes questions:
                         </p>
-                        <li>
-                            <ul>
+                        <ul>
+                            <li>
                                 Ai-je le temps et l’espace nécessaires pour
                                 m’occuper d’un animal ?{' '}
-                            </ul>
-                            <ul>
+                            </li>
+                            <li>
                                 Suis-je prêt à m’investir émotionnellement pour
                                 un accueil temporaire ?
-                            </ul>
-                        </li>
+                            </li>
+                        </ul>
                         <p>
                             Les associations partenaires vous accompagnent à
                             chaque étape, vous apportant des conseils et un
@@ -133,14 +146,8 @@ const AnimalsPage = () => {
                             maillon clé dans leur parcours vers une nouvelle
                             vie. Ensemble, changeons leur destin.
                         </p>
-                    </aside>
-                    <AnimalCard />
-                    <AnimalCard />
-                    <AnimalCard />
-                    <AnimalCard />
-                    <AnimalCard />
-                    <AnimalCard />
-                </section>
+                    </div>
+                </div>
             </main>
         </>
     );
