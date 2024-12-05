@@ -1,7 +1,8 @@
-import styles from "./AnimalsPage.module.css";
-import PawsHeader from "../../components/pawsHeader/pawsHeader.tsx";
-import CtaButton from "../../components/mainButton/ctaButton.tsx";
-import Reinit from "../../assets/icons/rotate-left-solid.svg"
+import styles from './AnimalsPage.module.css';
+import PawsHeader from '../../components/pawsHeader/pawsHeader.tsx';
+import CtaButton from '../../components/mainButton/ctaButton.tsx';
+import Reinit from '../../assets/icons/rotate-left-solid.svg';
+import AnimalCard from '../../components/animalCard/AnimalCard';
 
 const AnimalsPage = () => {
     return (
@@ -89,9 +90,14 @@ const AnimalsPage = () => {
                         </form>
                     </div>
                 </section>
+                <section className={styles.animalsCardContainer}>
+                    <AnimalCard />
+                    <AnimalCard />
+                    <AnimalCard />
+                </section>
             </main>
         </>
     );
-}
+};
 
-export default AnimalsPage
+export default AnimalsPage;

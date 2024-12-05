@@ -1,3 +1,5 @@
+/*MOBILE FIRST */
+
 .formDesktop {
     display: none;
 }
@@ -12,8 +14,7 @@
     background-color: #EDEDED;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     padding: 2rem;
-    margin-inline: 1rem;
-
+    margin-top: 1rem;
 }
 
 .alignForm {
@@ -38,4 +39,13 @@
 .reinit {
     border: none;
     transform: scaleX(-1); /* Miroir horizontal */
+}
+
+.animalsCardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    position: relative;
+    bottom: 4.5rem;
 }
