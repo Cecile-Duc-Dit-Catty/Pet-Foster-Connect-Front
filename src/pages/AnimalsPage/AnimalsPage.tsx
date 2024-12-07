@@ -2,13 +2,15 @@ import styles from './AnimalsPage.module.css';
 import PawsHeader from '../../components/pawsHeader/pawsHeader.tsx';
 import CtaButton from '../../components/mainButton/ctaButton.tsx';
 import Reinit from '../../assets/icons/rotate-left-solid.svg';
-import AnimalCard from '../../components/animalCard/AnimalCard';
+import AnimalCard from '../../components/animalCard/animalCard.tsx';
+import Pagination from "../../components/pagination/pagination.tsx";
 
 const AnimalsPage = () => {
     return (
         <>
             <main>
-                <PawsHeader />
+                <PawsHeader/>
+                <div className={styles.alignContain}>
                 <section className={styles.formDesktop}>
                     <div className={styles.formContainerDesktop}>
                         <form action="">
@@ -42,9 +44,9 @@ const AnimalsPage = () => {
                                     </select>
                                 </div>
                                 <div className={styles.buttonsContainerDesktop}>
-                                    <CtaButton label={'Rechercher'} />
+                                    <CtaButton label={'Rechercher'}/>
                                     <button className={styles.reinit}>
-                                        <img src={Reinit} alt="Réinitialiser" />
+                                        <img src={Reinit} alt="Réinitialiser"/>
                                     </button>
                                 </div>
                             </div>
@@ -86,9 +88,9 @@ const AnimalsPage = () => {
                                 </select>
                             </div>
                             <div className={styles.buttonsContainerMobile}>
-                                <CtaButton label={'Rechercher'} />
+                                <CtaButton label={'Rechercher'}/>
                                 <button className={styles.reinit}>
-                                    <img src={Reinit} alt="Réinitialiser" />
+                                    <img src={Reinit} alt="Réinitialiser"/>
                                 </button>
                             </div>
                         </form>
@@ -96,12 +98,12 @@ const AnimalsPage = () => {
                 </section>
                 <div className={styles.alignDesktop}>
                     <section className={styles.animalsCardContainer}>
-                        <AnimalCard />
-                        <AnimalCard />
-                        <AnimalCard />
-                        <AnimalCard />
-                        <AnimalCard />
-                        <AnimalCard />
+                        <AnimalCard/>
+                        <AnimalCard/>
+                        <AnimalCard/>
+                        <AnimalCard/>
+                        <AnimalCard/>
+                        <AnimalCard/>
                     </section>
                 </div>
                 <div className={styles.asideContainer}>
@@ -147,6 +149,11 @@ const AnimalsPage = () => {
                             vie. Ensemble, changeons leur destin.
                         </p>
                     </div>
+
+                </div>
+                <section>
+                    <Pagination/>
+                </section>
                 </div>
             </main>
         </>
