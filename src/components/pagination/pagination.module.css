@@ -34,3 +34,10 @@
 .btnNav {
     font-weight: bold;
 }
+
+/*--------------------------*/
+/* PORTABLE DESKTOP STANDARD VERSION */
+/*--------------------------*/
+@media (min-width: 1000px) {
+
+}

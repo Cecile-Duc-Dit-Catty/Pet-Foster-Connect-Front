@@ -151,7 +151,7 @@ const AnimalsPage = () => {
                     </div>
 
                 </div>
-                <section>
+                <section className={styles.paginationAnimals}>
                     <Pagination/>
                 </section>
                 </div>
