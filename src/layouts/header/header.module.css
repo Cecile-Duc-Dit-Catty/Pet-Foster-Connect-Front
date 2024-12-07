@@ -218,7 +218,8 @@
 
 
 .separator {
-    width: 0.1rem;
+    border-radius: 1rem;
+    width: 0.2rem;
     height: 1.8rem;
     margin-inline: 2rem;
     background-color: var(--secondary-color);

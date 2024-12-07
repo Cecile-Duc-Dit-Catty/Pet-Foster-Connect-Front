@@ -1,0 +1,334 @@
+/*--------------------------*/
+/* MOBILE FIRST */
+/*--------------------------*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.alignContain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.asideContainer {
+    display: none;
+}
+
+.formDesktop {
+    display: none;
+}
+
+.formContainerMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 4rem;
+    background-color: #EDEDED;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 2rem;
+    margin-top: 1rem;
+    z-index: 3;
+}
+
+.alignForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainerMobile select {
+    width: 15rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.buttonsContainerMobile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.reinit {
+    border: none;
+    transform: scaleX(-1); /* Miroir horizontal */
+}
+
+.animalsCardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    position: relative;
+    bottom: 4.5rem;
+}
+
+/*--------------------------*/
+/* TABLET VERSION */
+/*--------------------------*/
+
+@media (min-width: 720px) {
+
+    .formMobile {
+        display: none;
+    }
+
+    .formDesktop {
+        display: flex;
+        justify-content: center;
+    }
+
+    .formContainerDesktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 4rem;
+        background-color: #EDEDED;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        padding: 2rem;
+        margin-top: 1rem;
+        width: 49rem;
+        z-index: 3;
+    }
+
+    .alignFormDesktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .formContainerDesktop select {
+        align-items: center;
+        width: 13rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: 0.4rem;
+        margin-bottom: 1rem;
+        margin-right: 1.5rem;
+    }
+
+    .buttonsContainerDesktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+
+    }
+
+    .reinitDesktop {
+        transform: scaleX(-1); /* Miroir horizontal */
+    }
+
+    .animalsCardContainer {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5rem;
+        position: relative;
+        bottom: 4.5rem;
+        gap: 2rem;
+    }
+
+}
+
+/*--------------------------*/
+/* PORTABLE DESKTOP STANDARD VERSION */
+/*--------------------------*/
+@media (min-width: 1000px) {
+
+    .formContainerDesktop {
+        z-index: 2;
+        background-color: #EDEDED;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        padding: 2rem;
+        margin-top: 1rem;
+        width: 75rem;
+        height: 15rem;
+        bottom: 7rem;
+    }
+
+    .formContainerDesktop select {
+        width: 18rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: 0.4rem;
+        margin-bottom: 2rem;
+        margin-right: 1.5rem;
+        margin-left: 3.5rem;
+    }
+
+
+    .asideContainer {
+        z-index: 0;
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #EDEDED;
+        padding: 3rem;
+        position: absolute;
+        left: 1rem;
+        top: 15rem;
+        padding-top: 18rem;
+    }
+
+    .asideContainer p {
+        color: #0A0A0A;
+    }
+
+    .asideContainer p, ul {
+        font-size: 0.8rem;
+    }
+
+    .asideContainer ul {
+        padding-bottom: 1rem;
+    }
+
+    .titleContainer {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+    }
+
+    .lineHeader {
+        width: 14.5rem;
+        height: 0.3rem;
+        background-color: var(--primary-color);
+        border-radius: 0.4rem;
+    }
+
+    .textContainer {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .textContainer p {
+        padding-bottom: 1rem;
+    }
+
+    .animalsCardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        width: 50rem;
+        left: 6rem;
+
+    }
+
+    .buttonsContainerDesktop {
+        width: -25rem;
+        margin-bottom: 2rem;
+
+
+    }
+
+    .paginationAnimals {
+        margin-left: 8rem;
+    }
+
+}
+
+/*--------------------------*/
+/* PORTABLE DESKTOP HD VERSION */
+/*--------------------------*/
+
+@media screen and (min-width: 1200px) { }
+
+/*--------------------------*/
+/* DESKTOP STANDARD VERSION */
+/*--------------------------*/
+
+@media screen and (min-width: 1920px) {
+
+    .formContainerDesktop {
+        z-index: 3;
+        background-color: #EDEDED;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        padding: 2rem;
+        margin-top: 1rem;
+        width: 75rem;
+        height: 15rem;
+        bottom: 7rem;
+    }
+
+    .formContainerDesktop select {
+        width: 18rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: 0.4rem;
+        margin-bottom: 2rem;
+        margin-right: 1.5rem;
+        margin-left: 3.5rem;
+    }
+
+
+    .asideContainer {
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #EDEDED;
+        padding: 5rem;
+        position: absolute;
+        left: 1.7rem;
+        top: 24rem;
+        padding-top: 13rem;
+    }
+
+    .asideContainer p {
+        color: #0A0A0A;
+    }
+
+    .asideContainer ul {
+        padding-bottom: 1rem;
+    }
+
+    .titleContainer {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .lineHeader {
+        width: 20rem;
+        height: 0.3rem;
+        background-color: var(--primary-color);
+        border-radius: 0.4rem;
+    }
+
+    .textContainer {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .textContainer p {
+        padding-bottom: 1rem;
+    }
+
+    .animalsCardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        width: 50rem;
+        left: 4.5rem;
+
+    }
+
+    .buttonsContainerDesktop {
+        width: -25rem;
+        margin-bottom: 2rem;
+
+
+    }
+
+}

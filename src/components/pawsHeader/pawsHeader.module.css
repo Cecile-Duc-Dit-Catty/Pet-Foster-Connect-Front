@@ -1,0 +1,88 @@
+.headerSection {
+    background-image: url("../../assets/images/background/paw-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 80%;
+    width: 100%;
+    height: 16rem;
+    padding-top: 15%;
+    z-index: 2;
+}
+
+.headerDescription p {
+    background-color: rgba(164, 194, 244, 0.5);
+    font-size: 2.1rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-inline: 0.5rem;
+    padding-block: 2rem;
+
+}
+
+.headerDescription {
+     position: relative;
+ }
+
+
+/*--------------------------*/
+/* TABLET VERSION */
+/*--------------------------*/
+
+@media (min-width: 720px) {
+    .headerDescription {
+        bottom: 3rem;
+    }
+}
+
+/*--------------------------*/
+/* PORTABLE DESKTOP STANDARD VERSION */
+/*--------------------------*/
+@media (min-width: 1000px) {
+
+    .headerDescription {
+        bottom: 10rem;
+        margin-inline: 30rem;
+    }
+
+    .headerDescription p {
+        font-size: 2rem;
+    }
+
+}
+
+/*--------------------------*/
+/* DESKTOP STANDARD VERSION */
+/*--------------------------*/
+
+@media screen and (min-width: 1920px) {
+
+    .headerDescription {
+        bottom: 12rem;
+        margin-inline: 40rem;
+    }
+
+    .headerDescription p {
+        font-size: 2.8rem;
+    }
+}
+
+/*--------------------------*/
+/* PORTABLE DESKTOP HD VERSION */
+/*--------------------------*/
+
+@media screen and (min-width: 1200px) {
+    .headerDescription {
+        bottom: 12rem;
+    }
+}
+
+/*--------------------------*/
+/* DESKTOP STANDARD VERSION */
+/*--------------------------*/
+
+@media screen and (min-width: 1920px) {
+    .headerDescription {
+        bottom: 15.5rem;
+    }
+}
